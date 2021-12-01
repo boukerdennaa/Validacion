@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario Javascript</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<div class="form">	
+			<div class="form-error" id="error-message">
+				<p>El límite de carácteres es 10.</p>
+			</div>
+		
+			<div class="form-container">
+				<form id="faqs-form">
+					<div class="form-group">
+						<div class="form-label">
+							<label for="title">Título</label>
+						</div>
+						<div class="form-input">
+							<input type="text" name="title" value="" id="faqs-title" data-limit="10" />
+						</div>
+					</div>
+				</form>
+			</div>
+			
+			<div class="form-footer">
+				<div class="form-counter">
+					<p>Has escrito <span id="counter-character">0</span> caracteres de los 10 permitidos</span></p>
+				</div>
+				
+				<div class="form-submit">
+					<button id="send-button">Enviar</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
